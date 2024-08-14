@@ -31,8 +31,8 @@ const resolvers = {
                 const token = signToken(user);
 
                 return { token, user };
-            } catch (e) {
-                console.error(e);
+            } catch (err) {
+                console.error(err);
             }
         },
         saveBook: async (parent, { userId, input }) => {
